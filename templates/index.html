@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Керамическая плитка и керамогранит в Иваново. Более 1 000 видов в наличии в салоне на Минской, 6а.">
+  <title>Керамическая плитка в Иваново — Новострой37</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top" aria-label="Новострой37 — на главную"><span class="brand-mark">Н</span><span><b>НОВОСТРОЙ</b><small>СТРОИТЕЛЬНЫЙ ГИПЕРМАРКЕТ</small></span><em>37</em></a>
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="nav"><a href="#catalog">Каталог</a><a href="#showroom">Салон</a><a href="#delivery">Доставка</a><a href="#faq">Вопросы</a></nav>
+    <div class="header-contact"><a href="tel:+74932419755" class="phone">+7 (4932) 419-755</a><small>Ежедневно по графику работы</small></div>
+    <a class="button button-orange header-button" href="#booking">Записаться</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap section-pad">
+    <div class="hero-copy">
+      <div class="price-note"><b>от 1 074 ₽/м²</b><span>цена за м², актуальную цену и наличие уточняйте</span></div>
+      <p class="eyebrow">Плитка, которую можно выбрать вживую</p>
+      <h1>Керамическая<br>плитка и керамогранит<br>в Иваново</h1>
+      <p class="lead">Более 1 000 видов в наличии. Приезжайте выбрать вживую — поможем подобрать и рассчитать.</p>
+      <div class="actions"><a class="button button-orange" href="#showroom">Приехать в салон</a><a class="button button-outline" href="tel:+74932419755">Позвонить</a></div>
+      <p class="address-line">г. Иваново, ул. Минская, 6а <span>Пн–Пт 9:00–18:00, Сб 9:00–17:00</span></p>
+    </div>
+    <div class="hero-visual showroom-art"><div class="art-label"><span>ВЫСТАВОЧНЫЙ ЗАЛ</span><strong>300 м²</strong><small>1 000+ видов плитки в наличии</small></div><div class="showroom"><div class="ceiling"></div><div class="wall-grid"></div><div class="floor"></div><div class="walkway"></div><div class="display-island"></div></div><p class="caption">Выставочный зал 300 м², ул. Минская, 6а — схематичная визуализация</p></div>
+    <div class="hero-proof">
+      <div><b>Зал 300 м²</b><span>Смотрите и трогайте плитку вживую</span></div><div><b>1 000+ видов в наличии</b><span>Покупайте сразу, без ожидания</span></div><div><b>Поставка от 5 рабочих дней</b><span>Привезём под заказ</span></div><div><b>Бесплатное хранение</b><span>Заберите, когда закончите ремонт</span></div>
+    </div>
+  </section>
+
+  <section class="feature-band"><div class="wrap feature-row"><div><span class="eyebrow">Выбор без догадок</span><h2>1 000+<br><small>видов плитки в наличии</small></h2><p>Приезжайте и покупайте сразу, без ожидания поставки. В зале — разные форматы, фактуры и оттенки: сравните их вживую и подберите под свою задачу.</p><div class="actions"><a class="button button-orange" href="#catalog">Посмотреть вживую</a><a class="button button-outline" href="tel:+74932419755">Уточнить наличие</a></div></div><div class="showroom-art small-art"><div class="art-label"><span>ВЫСТАВОЧНЫЙ ЗАЛ</span><strong>300 м²</strong><small>1 000+ видов плитки в наличии</small></div><div class="showroom"><div class="ceiling"></div><div class="wall-grid"></div><div class="floor"></div><div class="walkway"></div><div class="display-island"></div></div></div></div></section>
+
+  <section class="wrap section-pad" id="catalog">
+    <div class="section-heading"><div><p class="eyebrow">Ассортимент</p><h2>Плитка для стен, пола и керамогранит</h2><p>Выберите параметры — покажем примеры из ассортимента. Наличие и цены уточняйте у менеджера.</p></div></div>
+    <div class="filters">
+      <label>Тип<select data-filter="type"><option value="">Все</option><option>Для стен</option><option>Для пола</option><option>Керамогранит</option></select></label>
+      <label>Бренд<select data-filter="brand_key"><option value="">Любой бренд</option><option value="lb">LB Ceramics</option><option value="nephrite">Nefrit Keramika</option><option value="azori">Azori Ceramica</option><option value="gracia">Gracia Ceramica</option><option value="belleza">Belleza</option></select></label>
+      <label>Применение<select data-filter="usage"><option value="">Все</option><option>Стена</option><option>Пол</option><option>Ванная</option><option>Кухня</option></select></label>
+      <label>Формат<select data-filter="format"><option value="">Любой формат</option><option>60×60</option><option>60×120</option><option>120×20</option><option>30×90</option><option>20×120</option></select></label>
+      <label>Поверхность<select data-filter="surface"><option value="">Все</option><option>Глянец</option><option>Мат</option><option>Структура</option></select></label>
+      <label>Цвет<select data-filter="color"><option value="">Любой цвет</option><option>Серый</option><option>Светлый</option><option>Тёплый</option></select></label>
+      <label>Стиль<select data-filter="style"><option value="">Любой стиль</option><option>Современный</option><option>Классический</option><option>Текстурный</option></select></label>
+    </div>
+    <div class="catalog-meta"><span id="result-count">Показано 4 из 8</span><button id="reset-filters" class="text-button">Сбросить фильтры</button></div>
+    <div class="product-grid" id="products">
+      {% for p in products %}
+      <article class="product-card" data-type="{{ p.type }}" data-brand_key="{{ p.brand_key }}" data-usage="{{ p.usage }}" data-format="{{ p.format }}" data-surface="{{ p.surface }}" data-color="{{ p.color }}" data-style="{{ p.style }}">
+        <div class="tile-photo {{ p.swatch }}"><span class="stock">{{ p.stock }}</span><div class="tile-sample"></div></div>
+        <div class="product-info"><div class="product-brand">{{ p.brand }}</div><h3>{{ p.title }}</h3><div class="tags"><span>{{ p.usage|lower }}</span><span>{{ p.color|lower }}</span><span>{{ p.style|lower }}</span></div><p class="product-price">{{ p.price }}</p><small>цена за м², уточняйте наличие</small><a class="button button-outline button-full" href="#booking">Уточнить наличие</a></div>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="catalog-bottom"><button class="button button-outline" id="show-four">Показать ещё</button><a href="#booking">Уточнить наличие и цены →</a></div>
+    <p class="fine-print">Ассортимент обновляется. Актуальное наличие и цены уточняйте у менеджера или в выставочном зале.</p>
+  </section>
+
+  <section class="soft-band"><div class="wrap section-pad"><div class="section-heading"><div><p class="eyebrow">Быстрый выбор</p><h2>Подбор по применению</h2><p>Выберите задачу — посмотрим подходящие варианты в зале и поможем посчитать количество.</p></div></div><div class="use-grid"><a class="use-card bath" href="#catalog"><span>Ванная</span><b>→</b></a><a class="use-card kitchen" href="#catalog"><span>Кухня</span><b>→</b></a><a class="use-card floor" href="#catalog"><span>Пол</span><b>→</b></a><a class="use-card wall" href="#catalog"><span>Стена</span><b>→</b></a></div></div></section>
+
+  <section class="wrap section-pad"><div class="section-heading"><div><p class="eyebrow">С заботой о ремонте</p><h2>Поможем выбрать, посчитать и забрать</h2><p>Выбор плитки — не только вопрос цены. Возьмём на себя расчёт, подбор и доставку.</p></div></div><div class="service-grid">
+    <article><span class="number">01</span><h3>Помощь в расчётах</h3><p>Консультант поможет посчитать количество плитки под вашу задачу.</p><a href="#booking">Рассчитать количество →</a></article><article><span class="number">02</span><h3>Дизайн-проект</h3><p>Поможем представить, как плитка будет выглядеть в вашем интерьере.</p><a href="#booking">Обсудить проект →</a></article><article><span class="number">03</span><h3>Поиск аналогов</h3><p>Подберём аналоги по готовым дизайнам и коллекциям.</p><a href="#booking">Найти аналог →</a></article><article><span class="number">04</span><h3>Доставка</h3><p>Привезём покупку по Иваново и области в удобное время.</p><a href="#delivery">Узнать условия →</a></article><article><span class="number">05</span><h3>Бесплатное хранение</h3><p>Покупайте сейчас, забирайте плитку, когда будете готовы.</p><a href="#booking">Уточнить условия →</a></article><article><span class="number">06</span><h3>Образцы</h3><p>Посмотрите фактуру и оттенки в салоне до покупки.</p><a href="#showroom">Приехать в зал →</a></article>
+  </div></section>
+
+  <section class="soft-band"><div class="wrap section-pad"><div class="section-heading"><div><p class="eyebrow">Всё для удобного ремонта</p><h2>Как купить плитку</h2></div></div><div class="steps"><div><i>1</i><b>Выберите в салоне</b><span>Посмотрите образцы вживую</span></div><div><i>2</i><b>Рассчитайте объём</b><span>Поможем учесть подрезку</span></div><div><i>3</i><b>Оформите заказ</b><span>В наличии или под заказ</span></div><div><i>4</i><b>Заберите или закажите доставку</b><span>Подстроимся под ваш ремонт</span></div></div><a class="button button-orange" href="#showroom">Приехать в салон</a></div></section>
+
+  <section class="wrap section-pad showroom-section" id="showroom"><div class="showroom-copy"><p class="eyebrow">Ждём вас</p><h2>Выставочный зал 300 м² на ул. Минской, 6а</h2><p>Посмотрите образцы при разном освещении, сравните фактуру и оттенки. Консультант поможет рассчитать количество.</p><ul class="check-list"><li>Более 1 000 видов плитки в наличии</li><li>Удобная парковка рядом с салоном</li><li>Бесплатное хранение покупки</li></ul><div class="actions"><a class="button button-orange" href="https://yandex.ru/maps/?text=Иваново%20Минская%206а" target="_blank" rel="noreferrer">Построить маршрут</a><a class="button button-outline" href="tel:+74932419755">Позвонить</a></div><a class="text-link" href="#booking">Записаться на консультацию →</a></div><div><div class="showroom-art map-art"><div class="art-label"><span>НОВОСТРОЙ37</span><strong>Минская, 6а</strong><small>Выставочный зал керамической плитки</small></div><div class="showroom"><div class="ceiling"></div><div class="wall-grid"></div><div class="floor"></div><div class="walkway"></div><div class="display-island"></div></div></div><div class="map-card"><span class="map-pin">●</span><div><b>Новострой37</b><span>ул. Минская, 6а · Иваново</span></div><a href="https://yandex.ru/maps/?text=Иваново%20Минская%206а" target="_blank" rel="noreferrer">Открыть карту ↗</a></div></div></section>
+
+  <section class="soft-band"><div class="wrap section-pad"><div class="section-heading"><div><p class="eyebrow">Нам доверяют</p><h2>Бренды-партнёры</h2><p>Популярные производители керамической плитки и керамогранита.</p></div></div><div class="brand-grid"><b>LB CERAMICS</b><b>NEFRIT KERAMIKA</b><b>AZORI CERAMICA</b><b>BELLEZA</b><b>GRACIA CERAMICA</b><b>LASSELSBERGER</b><b>GRANIT</b></div></div></section>
+
+  <section class="wrap section-pad"><div class="section-heading"><div><p class="eyebrow">Честные отзывы</p><h2>Что говорят покупатели</h2></div></div><div class="review-grid"><blockquote><span>“</span><p>Приехали выбрать плитку в ванную — думали, будет как в интернете, только по фото. В зале всё потрогали, консультант помог посчитать количество с запасом на подрезку. Взяли всё сразу, ещё и дешевле, чем планировали.</p><cite>Марина, Иваново</cite></blockquote><blockquote><span>“</span><p>Нужен был керамогранит под дерево на кухню. Показали несколько вариантов, дали образцы домой. Через пять дней привезли. Отдельное спасибо за бесплатное хранение — ремонт затянулся, забрал позже.</p><cite>Дмитрий, Иваново</cite></blockquote><blockquote><span>“</span><p>Помогли подобрать аналог коллекции, которая была не по карману. Рисунок почти не отличить, а цена ниже в два раза. Приехала по совету подруги, не пожалела.</p><cite>Ольга, Кохма</cite></blockquote><blockquote><span>“</span><p>Приехал в салон без записи, посмотрел вживую и сразу купил. Консультант помог рассчитать плитку и клей. Понравилось, что не навязывали лишнего.</p><cite>Алексей, Иваново</cite></blockquote></div></section>
+
+  <section class="soft-band" id="delivery"><div class="wrap section-pad"><div class="section-heading"><div><p class="eyebrow">Доставим аккуратно</p><h2>Доставка по Иваново и области</h2><p>Доставка платная. Разгрузка — силами покупателя. «Газель» с жёстким кузовом: 1,5 т, 9 м³, длина 3 м.</p></div></div><div class="delivery-layout"><div class="rate-table"><div class="rate-row rate-head"><b>Направление</b><b>Тариф</b></div><div class="rate-row"><b>Город Иваново</b><span>1 300 ₽ — на следующий день<br>2 500 ₽ — срочная доставка ко времени</span></div><div class="rate-row"><b>Отдалённые районы</b><span>Зона 1 — 1 400 ₽ (срочная 2 500 ₽)<br>Зона 2 — 1 500 ₽ (срочная 3 000 ₽)<br>Зона 3 — 1 750 ₽ (срочная 3 000 ₽)<br>Зона 4 — 2 000 ₽ (срочная 3 000 ₽)</span></div><div class="rate-row"><b>Область</b><span>до 50 км — 100 ₽/км; 51–70 км — 85 ₽/км;<br>71–100 км — 75 ₽/км; свыше 100 км — 65 ₽/км</span></div><div class="rate-row"><b>Манипулятор</b><span>5 т — от 5 500 ₽; 10–12 т — от 6 500 ₽;<br>15 т — от 8 000 ₽ (доставка и разгрузка)</span></div></div><aside class="delivery-card"><span class="eyebrow">Рассчитать доставку</span><h3>Подскажем тариф и время</h3><p>Назовите адрес и объём — рассчитаем стоимость. Разгрузка силами покупателя.</p><a class="button button-orange button-full" href="tel:+74932376617">Рассчитать доставку</a><a class="delivery-phone" href="tel:+74932376617">+7 (4932) 37-66-17</a><small>Отдел доставки</small></aside></div></div></section>
+
+  <section class="wrap section-pad" id="faq"><div class="section-heading"><div><p class="eyebrow">Подскажем и поможем</p><h2>Частые вопросы</h2><p>Не нашли ответ? Позвоните: <a href="tel:+74932419755">+7 (4932) 419-755</a>.</p></div></div><div class="faq-list"><details><summary>Сколько плитки нужно?</summary><p>Пришлите размеры помещения или приезжайте с планом — консультант рассчитает площадь и запас на подрезку.</p></details><details><summary>Можно ли взять образцы?</summary><p>В выставочном зале можно посмотреть и сравнить образцы. Уточните у консультанта возможность взять выбранный образец домой.</p></details><details><summary>Какие сроки поставки под заказ?</summary><p>Поставка обычно занимает от 5 рабочих дней. Точный срок зависит от коллекции и наличия у производителя.</p></details><details><summary>Сколько стоит доставка?</summary><p>Стоимость зависит от адреса, объёма и типа автомобиля. Позвоните в отдел доставки: +7 (4932) 37-66-17.</p></details><details><summary>Где хранить плитку до ремонта?</summary><p>Купленную плитку можно бесплатно оставить на хранение у нас до начала ремонта. Условия уточняйте у менеджера.</p></details><details><summary>Можно ли вернуть плитку?</summary><p>Возможность и условия возврата зависят от товара и его состояния. Перед покупкой уточните детали у консультанта.</p></details><details><summary>Найдёте ли аналог по готовому дизайну?</summary><p>Да, покажите нам фото или название коллекции — подберём похожие варианты из ассортимента.</p></details></div></section>
+
+  <section class="soft-band"><div class="wrap section-pad price-cta"><p class="eyebrow">Посмотрите и сравните</p><h2>Думаете, в интернете дешевле?</h2><p>Приезжайте — увидите фактуру, сравните оттенки и получите точный расчёт. Поможем выбрать под ваш бюджет.</p><a class="button button-orange" href="#showroom">Приехать в салон</a></div></section>
+
+  <section class="wrap section-pad booking-section" id="booking"><div class="booking-copy"><p class="eyebrow">Приезжайте выбрать вживую</p><h2>Посмотрите плитку,<br>пока выбираете</h2><p>Зал 300 м², более 1 000 видов в наличии, ул. Минская, 6а.</p><div class="actions"><a class="button button-outline" href="tel:+74932419755">Позвонить</a><a class="text-link" href="https://yandex.ru/maps/?text=Иваново%20Минская%206а" target="_blank" rel="noreferrer">Посмотреть зал →</a></div><ul class="check-list"><li>Приезжайте с размерами — поможем посчитать</li><li>Сравните оттенки и фактуру в зале, а не по фото</li><li>Купите из наличия или оформите поставку от 5 дней</li></ul></div><div class="form-card"><p class="eyebrow">Записаться на консультацию</p><h3>Два поля — и мы ждём вас в выставочном зале</h3>
+    {% if sent %}<div class="success-message" role="status">Спасибо! Заявка принята. Мы скоро свяжемся с вами.</div>{% endif %}{% if error %}<div class="error-message" role="alert">{{ error }}</div>{% endif %}
+    <form action="{{ url_for('booking') }}" method="post"><label>Имя<input name="name" placeholder="Как к вам обращаться" required></label><label>Телефон<input name="phone" type="tel" placeholder="+7 (___) ___-__-__" required></label><label class="consent"><input type="checkbox" name="consent" required><span>Согласен на обработку персональных данных и с <a href="#privacy">политикой конфиденциальности</a></span></label><button class="button button-orange button-full" type="submit">Записаться на консультацию</button></form><p class="form-phone">Или позвоните: <a href="tel:+74932419755">+7 (4932) 419-755</a></p></div></section>
+</main>
+
+<footer class="footer" id="privacy"><div class="wrap footer-grid"><div><a class="brand" href="#top"><span class="brand-mark">Н</span><span><b>НОВОСТРОЙ</b><small>СТРОИТЕЛЬНЫЙ ГИПЕРМАРКЕТ</small></span><em>37</em></a><p>Строительный гипермаркет. Керамическая плитка и керамогранит в Иваново.</p><small>Новострой37 · Иваново и Ивановская область</small></div><div><b>Контакты</b><p>153029, г. Иваново, ул. Минская, 6а<br>Пн–Пт 9:00–18:00, Сб 9:00–17:00, Вс — выходной</p><a href="tel:+74932419755">+7 (4932) 419-755</a><a href="mailto:info@novostroy37.ru">info@novostroy37.ru</a><a href="tel:+74932376617">Отдел доставки: +7 (4932) 37-66-17</a></div><div><b>Реквизиты</b><p>ИП Ликинов Владимир Анатольевич<br>ИНН 370260905156<br>ОГРНИП 306370230300129</p><a href="#privacy">Политика конфиденциальности</a></div></div></footer>
+<script src="{{ url_for('static', filename='site.js') }}"></script>
+</body>
+</html>
